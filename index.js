@@ -8,6 +8,7 @@ app.get('/', function(req, res){
   res.sendFile(__dirname +'/index.html');
   });
 
+//app.use("/script.js", express.static(__dirname + '/script.js'));
 app.use("/script.js", express.static(__dirname + '/script.js'));
 
 io.on('connection', function(socket){
